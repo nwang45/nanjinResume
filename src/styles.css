@@ -1,0 +1,184 @@
+/* src/styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header, .education, .skills, .experience, .projects, .footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  /* styles.css */
+.section {
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+.education {
+  background-color: #f0f0f0;
+}
+
+.experience {
+  background-color: #e8e8e8;
+}
+
+.projects {
+  background-color: #f0f0f0;
+}
+
+.skills {
+  background-color: #e8e8e8;
+}
+
+/* Add more styles for headings, paragraphs, etc., as needed */
+.projects {
+  background-color: #0A192F; /* Adjust to match your color scheme */
+  color: white;
+  padding: 40px; /* Adjust padding as needed */
+  text-align: center;
+  border-radius: 50px;
+  margin: 20px auto;
+  
+}
+
+.projects-title {
+  margin-bottom: 40px;
+  font-size: 2rem; /* Large title font size */
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px; /* Add padding to create space inside the container */
+  flex-wrap: wrap; /* Allows for responsive wrapping */
+  margin: 0 20px; /* Allows for responsive wrapping */
+}
+
+.project-card {
+  background: #112240; /* Adjust to match your color scheme */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 30%; /* Adjust width as necessary */
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+}
+
+.project-title {
+  font-size: 1.5rem; /* Adjust title font size as needed */
+  margin-bottom: 10px;
+
+  
+}
+
+.project-date {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.project-description {
+  font-size: 1rem; /* Adjust description font size as needed */
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .project-card {
+    width: 45%; /* Adjust to have 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 80%; /* Full width cards on very small screens */
+  }
+}
+
+
+/* src/styles.css */
+.footer {
+  background: url('/image.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo h2 {
+  margin: 0;
+}
+
+.contact-info p, .footer-legal a, .footer-copy p {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  opacity: 0.5;
+  size:10cap;
+}
+
+.footer-legal {
+  border-top: 1px solid #ffffff;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.footer-legal a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy p {
+  margin-top: 20px;
+}
+
+/* Make sure to add media queries to handle responsiveness */
+.contact-info {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center; /* Align the icon and text vertically */
+  margin: 5px 0; /* Add some space between the contact items */
+}
+
+.contact-info .faEnvelope,
+.contact-info .faPhone {
+  margin-right: 10px; /* Add space between the icon and the text */
+}
